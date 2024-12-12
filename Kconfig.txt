@@ -1,0 +1,16 @@
+#
+#
+#
+
+menuconfig SAMSUNG_FSS
+	tristate "Samsung Filesystems"
+	default m
+	help
+	  Say Y to enable Samsung Filesystems modules (j4fs)
+
+menuconfig J4FS
+	tristate "Samsung J4FS support"
+	depends on SAMSUNG_FSS
+	default m
+	help
+	  Say Y to enable Samsung J4FS support.
